@@ -1,0 +1,18 @@
+queue = []
+front = -1
+rear = -1
+
+def enqueue(x):
+    global front, rear
+    if front == -1: front = 0
+    rear += 1
+    queue.append(x)
+
+def dequeue():
+    global front
+    if front > rear: return "Empty"
+    x = queue[front]; front += 1
+    return x
+
+enqueue(10); enqueue(20)
+print(dequeue())
