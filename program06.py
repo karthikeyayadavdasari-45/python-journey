@@ -8,6 +8,7 @@ for i in range(3):
             print(" ", end="")
     print()
 
+#heart pattern
 n = 14
 
 # Upper Part
